@@ -1,0 +1,11 @@
+{
+  "name": "SimpleGulp",
+  "version": "0.1.0",
+  "description": "Simple Example of a Gulp.js project",
+  "author": "Ray Villalobos",
+  "devDependencies": {
+    "gulp-livereload": "~1.1.1",
+    "gulp-uglify": "~0.2.1",
+    "gulp-concat": "~2.1.7"
+  }
+}
