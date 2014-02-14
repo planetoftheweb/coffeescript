@@ -45,7 +45,7 @@ gulp.task('js', function() {
 
 gulp.task('watch', function() {
   var server = livereload();
-  gulp.watch('*.html', function(e) {
+  gulp.watch(['js/script.js', '*.html'], function(e) {
     server.changed(e.path);
   });
   gulp.watch(sassSources,['sass']);
