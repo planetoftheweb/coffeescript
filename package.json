@@ -1,10 +1,12 @@
 {
-  "name": "SimpleGulp",
+  "name": "CoffeeScriptTemplate",
   "version": "0.1.0",
-  "description": "Simple Example of a Gulp.js project",
+  "description": "Sample template for a coffeScript project",
   "author": "Ray Villalobos",
   "devDependencies": {
     "gulp-livereload": "~1.1.1",
+    "gulp-ruby-sass": "~0.3.0",
+    "gulp-coffee": "~1.4.1",
     "gulp-uglify": "~0.2.1",
     "gulp-concat": "~2.1.7"
   }

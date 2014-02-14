@@ -1,3 +1,3 @@
-function one() {
-  return "one";
-}
+(function () {
+  return console.log("one");
+})();
