@@ -1,7 +1,7 @@
 {
-  "name": "CoffeeScriptTemplate",
+  "name": "myApp",
   "version": "0.1.0",
-  "description": "Sample template for a coffeScript project",
+  "description": "Sample app",
   "author": "Ray Villalobos",
   "devDependencies": {
     "gulp-livereload": "~1.1.1",
