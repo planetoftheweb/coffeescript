@@ -1,0 +1,1 @@
+This is a layout for my upcoming course on CoffeeScript and Gulp.js.
