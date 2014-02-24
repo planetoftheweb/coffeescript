@@ -1,4 +1,373 @@
-/* line 3, main.scss */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 body {
-  background: #32a198;
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, ../../../../../../Users/bullit/Dropbox/_Markdown/Courses/Up and Running with CoffeeScript/exercisefiles/coffeescript/components/sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../../../../../../Users/bullit/Dropbox/_Markdown/Courses/Up and Running with CoffeeScript/exercisefiles/coffeescript/components/sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../../../../../../Users/bullit/Dropbox/_Markdown/Courses/Up and Running with CoffeeScript/exercisefiles/coffeescript/components/sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../../../../../../Users/bullit/Dropbox/_Markdown/Courses/Up and Running with CoffeeScript/exercisefiles/coffeescript/components/sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../../../../../../Users/bullit/Dropbox/_Markdown/Courses/Up and Running with CoffeeScript/exercisefiles/coffeescript/components/sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, ../../../../../../Users/bullit/Dropbox/_Markdown/Courses/Up and Running with CoffeeScript/exercisefiles/coffeescript/components/sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../../../../../../Users/bullit/Dropbox/_Markdown/Courses/Up and Running with CoffeeScript/exercisefiles/coffeescript/components/sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 52, main.scss */
+body {
+  background: #eddbba;
+  font-family: "Inika", serif;
+  font-size: 1.1em;
+}
+
+/* line 58, main.scss */
+#content {
+  color: #cc8e94;
+  font-size: 2em;
+}
+
+/* line 63, main.scss */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 70, main.scss */
+.city {
+  background: url("../images/backgrounds/seattle_skyline.jpg") no-repeat 50% 20%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+@media (min-width: 801px) {
+  /* line 70, main.scss */
+  .city {
+    height: 350px;
+  }
+}
+@media (max-width: 800px) {
+  /* line 70, main.scss */
+  .city {
+    height: 150px;
+  }
+}
+@media (max-width: 300px) {
+  /* line 70, main.scss */
+  .city {
+    height: 100px;
+  }
+}
+/* line 72, main.scss */
+.city img.logo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  max-width: 450px;
+  min-width: 250px;
+}
+
+/* line 82, main.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Patua One", sans-serif;
+}
+
+/* line 86, main.scss */
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  color: #507356;
+}
+
+/* line 92, main.scss */
+p {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #514e38;
+  margin-bottom: 20px;
+}
+
+/* line 99, main.scss */
+section {
+  padding: 20px 0;
+}
+
+/* line 104, main.scss */
+.main h1 {
+  color: #507356;
+  font-size: 3.5em;
+}
+@media (max-width: 700px) {
+  /* line 104, main.scss */
+  .main h1 {
+    font-size: 2.2em;
+  }
+}
+/* line 112, main.scss */
+.main p {
+  color: #3e2b3d;
+  margin-top: 15px;
+}
+
+/* line 118, main.scss */
+.artists {
+  background: #8d8862;
+  border-top: 20px solid #e3c691;
+  border-bottom: 50px solid #507356;
+}
+/* line 4, main.scss */
+.artists:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 125, main.scss */
+.artists h1 {
+  font-size: 3em;
+  color: #263729;
+}
+@media (max-width: 700px) {
+  /* line 125, main.scss */
+  .artists h1 {
+    font-size: 2em;
+  }
+}
+/* line 133, main.scss */
+.artists h2 {
+  font-size: 1.2em;
+  color: #eddbba;
+}
+@media (max-width: 700px) {
+  /* line 133, main.scss */
+  .artists h2 {
+    display: none;
+  }
+}
+/* line 141, main.scss */
+.artists p {
+  color: #314634;
+}
+/* line 144, main.scss */
+.artists .artistlist {
+  padding-bottom: 20px;
+}
+/* line 4, main.scss */
+.artists .artistlist:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 149, main.scss */
+.artists .artistlist .item {
+  min-width: 95px;
+  color: #6f6b4d;
+  width: 18%;
+  float: left;
+  padding: 1%;
+  text-align: center;
+}
+/* line 157, main.scss */
+.artists .artistlist .item img {
+  max-width: 130px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  padding: 5%;
+}
+
+/* line 172, main.scss */
+.venue {
+  position: relative;
+  background: url("../images/backgrounds/woodworking_workshop.jpg") no-repeat 50% 20%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border-bottom: 50px solid #8d8862;
+}
+/* line 174, main.scss */
+.venue h1 {
+  position: absolute;
+  bottom: 10px;
+  right: 5%;
+  color: #e3c691;
+  text-align: right;
+  font-size: 3em;
+}
+@media (min-width: 801px) {
+  /* line 172, main.scss */
+  .venue {
+    height: 350px;
+  }
+}
+@media (max-width: 800px) {
+  /* line 172, main.scss */
+  .venue {
+    height: 150px;
+  }
+}
+@media (max-width: 300px) {
+  /* line 172, main.scss */
+  .venue {
+    height: 100px;
+  }
+}
+/* line 4, main.scss */
+.venue:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 188, main.scss */
+.workshops {
+  position: relative;
+  border-bottom: 40px solid #3e2b3d;
+  border-top: 40px solid #b08b7b;
+  background: url("../images/backgrounds/pottery_workshop.jpg") no-repeat 50% 20%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 190, main.scss */
+.workshops h1 {
+  position: absolute;
+  bottom: 10px;
+  right: 10%;
+}
+@media (min-width: 801px) {
+  /* line 188, main.scss */
+  .workshops {
+    height: 350px;
+  }
+}
+@media (max-width: 800px) {
+  /* line 188, main.scss */
+  .workshops {
+    height: 150px;
+  }
+}
+@media (max-width: 300px) {
+  /* line 188, main.scss */
+  .workshops {
+    height: 100px;
+  }
+}
+/* line 4, main.scss */
+.workshops:after {
+  content: "";
+  display: table;
+  clear: both;
 }

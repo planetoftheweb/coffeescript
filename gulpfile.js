@@ -24,6 +24,7 @@ var sassSources = [
 gulp.task('sass', function(){
     gulp.src(sassSources)
     .pipe(sass({ lineNumbers: true, style: 'expanded' }))
+      .on('error', gutil.log)
     .pipe(concat('style.css'))
     .pipe(gulp.dest('css'))
     .pipe(livereload());

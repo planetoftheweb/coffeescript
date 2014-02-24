@@ -1,5 +1,5 @@
 fill = (item) ->
-  $('h1').append "#{item}"
+  $('#content').append "#{item}"
   console.log @fill
 
-fill 'Ray'
+fill "Don't miss it!"

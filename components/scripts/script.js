@@ -1,8 +1,8 @@
 var fill;
 
 fill = function(item) {
-  $('h1').append("" + item);
+  $('#content').append("" + item);
   return console.log(this.fill);
 };
 
-fill('Ray');
+fill("Don't miss it!");
