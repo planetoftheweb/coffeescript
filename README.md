@@ -1,4 +1,5 @@
 # Up and Running with CoffeeScript
+![Up and Running with CoffeeScript Hero Image](hero.png)
 This is the repository for my course, [Up and Running with CoffeeScript](http://www.lynda.com/Developer-Web-Design-tutorials/Up-Running-CoffeeScript/154415-2.html). The full course is available at [lynda.com](http://lynda.com).
 
 ## Course Description
