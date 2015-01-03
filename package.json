@@ -1,0 +1,16 @@
+{
+  "name": "MyApp",
+  "version": "0.1.0",
+  "description": "Sample CoffeeScript Application",
+  "author": "Ray Villalobos",
+  "devDependencies": {
+    "gulp-util": "^2.2.14",
+    "gulp": "^3.5.2",
+    "gulp-coffee": "^1.4.1",
+    "gulp-concat": "^2.1.7",
+    "gulp-ruby-sass": "^0.3.1",
+    "gulp-uglify": "^0.2.1",
+    "gulp-livereload": "^1.1.1",
+    "tiny-lr": "0.0.5"
+  }
+}
