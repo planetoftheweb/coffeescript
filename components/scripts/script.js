@@ -1,7 +1,12 @@
-var name;
+var info, key, value;
 
-name = 'Ray';
+info = {
+  name: 'Ray',
+  title: 'Staff Author',
+  tuts: 'http://lynda.planetoftheweb.com'
+};
 
-if (name != null) {
-  $('#content').append("" + name);
+for (key in info) {
+  value = info[key];
+  console.log("" + key + ": " + value);
 }
