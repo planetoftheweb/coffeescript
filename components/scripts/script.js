@@ -1,5 +1,5 @@
-var addStuff;
+var name;
 
-(addStuff = function() {
-  return $('#content').append("Don't miss it!");
-})();
+name = 'Ray';
+
+$('#content').append("--" + name);
