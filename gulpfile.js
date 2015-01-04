@@ -2,8 +2,13 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-ruby-sass'),
+    coffee = require('gulp-coffee'),
     concat = require('gulp-concat'),
     livereload = require('gulp-livereload');
+
+var coffeeSources = [
+  'components/coffee/*.coffee'
+];
 
 var jsSources = [
   'components/lib/jquery/jquery.js',
@@ -22,6 +27,13 @@ gulp.task('js', function() {
     .pipe(livereload());
 });
 
+gulp.task('coffee', function() {
+  gulp.src(coffeeSources)
+    .pipe(coffee({ bare: true})
+      .on('error', gutil.log))
+    .pipe(gulp.dest('components/scripts'));
+});
+
 gulp.task('sass', function() {
   gulp.src(sassSources)
     .pipe(sass({style: 'expanded', lineNumbers: true}))
@@ -37,6 +49,7 @@ gulp.task('html', function() {
 
 gulp.task('watch', function() {
   gulp.watch(jsSources, ['js']);
+  gulp.watch(coffeeSources, ['coffee']);
   gulp.watch('*.html', ['html']);
   gulp.watch(sassSources, ['sass']);
   gulp.watch(['js/script.js', '*.html']);
@@ -44,4 +57,4 @@ gulp.task('watch', function() {
   livereload.listen();
 });
 
-gulp.task('default', ['sass', 'js', 'html', 'watch']);
+gulp.task('default', ['sass', 'js', 'coffee', 'html', 'watch']);
