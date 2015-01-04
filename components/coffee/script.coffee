@@ -1,13 +1,9 @@
-info = [
-  'Ray Villalobos'
-  'http://planetoftheweb.com'
-  'http://authoredcontent.com'
-  'http://iviewsource.com'
-]
+append = (item) ->
+  $('#content').append "#{item}"
 
-fillOut = (name, links...) ->
-  $('#content').append "#{name}<br>"
-  for item in links
-    $('#content').append "#{item}<br>"
+author = 'Morten'
 
-fillOut info...
+switch author
+  when 'Ray' then append 'JavaScript'
+  when 'James', 'Morten' then append 'Web Design'
+  else append 'Training'
