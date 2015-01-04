@@ -1,19 +1,8 @@
-var append, author;
+var fill;
 
-append = function(item) {
-  return $('#content').append("" + item);
-};
+(fill = function(item) {
+  $('#content').append("" + item);
+  return console.dir(this.fill);
+})('Bob');
 
-author = 'Morten';
-
-switch (author) {
-  case 'Ray':
-    append('JavaScript');
-    break;
-  case 'James':
-  case 'Morten':
-    append('Web Design');
-    break;
-  default:
-    append('Training');
-}
+fill;

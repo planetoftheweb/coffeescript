@@ -1,9 +1,5 @@
-append = (item) ->
+do fill = (item = 'Bob') ->
   $('#content').append "#{item}"
+  console.dir @fill
 
-author = 'Morten'
-
-switch author
-  when 'Ray' then append 'JavaScript'
-  when 'James', 'Morten' then append 'Web Design'
-  else append 'Training'
+fill
