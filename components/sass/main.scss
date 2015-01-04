@@ -1,5 +1,199 @@
-$mainColor: #32A198;
+@import "reset";
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin backImage($image) {
+  background: url($image) no-repeat 50% 20% ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+
+  @media (min-width: 801px) {
+   height: 350px;
+  }
+
+  @media (max-width: 800px) {
+   height: 150px;
+  }
+
+  @media (max-width: 300px) {
+   height: 100px;
+  }
+}
+
+$beige         : #E3C691;
+$darkGreenGold : #8D8862;
+$lightGreen    : #C0DC99;
+$green         : #507356;
+$lightBlue     : #97D5D9;
+$desatBlue     : #464B65;
+$purple        : #3E2B3D;
+$darkPurple    : #3A3248;
+$pink          : #CC8E94;
+$skin          : #B08B7B;
+
+$headFont : 'Patua One', sans-serif;
+$bodyFont : 'Inika', serif;
 
 body {
-  background: $mainColor;
+  background: lighten($beige, 10%);
+  font-family: $bodyFont;
+  font-size: 1.1em;
+}
+
+#content {
+  color: $pink;
+  font-size: 2em;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.city {
+  @include backImage('../images/backgrounds/seattle_skyline.jpg');
+  img.logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    max-width: 450px;
+    min-width: 250px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headFont;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  color: $green;
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: darken($darkGreenGold, 20%);
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 20px 0;
+}
+
+.main {
+  h1 {
+    color: $green;
+    font-size: 3.5em;
+
+    @media (max-width: 700px) {
+      font-size: 2.2em;
+    }
+  }
+  p {
+    color: $purple;
+    margin-top: 15px;
+  }
+}
+
+.artists {
+  background: $darkGreenGold;
+  border-top: 20px solid $beige;
+  border-bottom: 50px solid $green;
+
+  @include clearfix;
+
+  h1 {
+    font-size: 3em;
+    color: darken($green, 20%);
+    @media (max-width: 700px) {
+      font-size: 2em;
+    }
+  }
+
+  h2 {
+    font-size: 1.2em;
+    color: lighten($beige, 10%);
+    @media (max-width: 700px) {
+     display: none;
+    }
+  }
+
+  p {
+    color: darken($green, 15%);
+  }
+ .artistlist {
+  @include clearfix;
+  padding-bottom: 20px;
+
+
+  .item {
+    min-width: 95px;
+    color: darken($darkGreenGold, 10%);
+    width: 18%;
+    float: left;
+    padding: 1%;
+    text-align: center;
+
+    img {
+      max-width: 130px;
+      margin: 0 auto;
+      display: block;
+      border-radius: 50%;
+      width: 100%;
+      padding: 5%;
+    }
+  }
+
+ }
+
+}
+
+
+.venue {
+  position: relative;
+  h1 {
+    position: absolute;
+    bottom: 10px;
+    right: 5%;
+    color: $beige;
+    text-align: right;
+    font-size: 3em;
+  }
+  @include backImage('../images/backgrounds/woodworking_workshop.jpg');
+  @include clearfix;
+  border-bottom: 50px solid $darkGreenGold;
+}
+
+
+.workshops {
+  position: relative;
+  h1 {
+    position: absolute;
+    bottom: 10px;
+    right: 10%;
+  }
+  border-bottom: 40px solid $purple;
+  border-top: 40px solid $skin;
+  @include backImage('../images/backgrounds/pottery_workshop.jpg');
+  @include clearfix;
 }

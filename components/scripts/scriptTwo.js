@@ -1,3 +1,0 @@
-function two() {
-  return "two";
-}

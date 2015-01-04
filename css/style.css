@@ -1,14 +1,334 @@
-/* line 3, ../main.scss */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../_reset.scss */
 body {
-  background: #32A198;
+  line-height: 1;
+}
+
+/* line 34, ../_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 52, ../main.scss */
+body {
+  background: #eddbba;
+  font-family: "Inika", serif;
+  font-size: 1.1em;
+}
+
+/* line 58, ../main.scss */
+#content {
+  color: #CC8E94;
+  font-size: 2em;
+}
+
+/* line 63, ../main.scss */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 70, ../main.scss */
+.city {
+  background: url("../images/backgrounds/seattle_skyline.jpg") no-repeat 50% 20%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+@media (min-width: 801px) {
+  /* line 70, ../main.scss */
+  .city {
+    height: 350px;
+  }
+}
+@media (max-width: 800px) {
+  /* line 70, ../main.scss */
+  .city {
+    height: 150px;
+  }
+}
+@media (max-width: 300px) {
+  /* line 70, ../main.scss */
+  .city {
+    height: 100px;
+  }
+}
+/* line 72, ../main.scss */
+.city img.logo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  max-width: 450px;
+  min-width: 250px;
+}
+
+/* line 82, ../main.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Patua One", sans-serif;
+}
+
+/* line 86, ../main.scss */
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  color: #507356;
+}
+
+/* line 92, ../main.scss */
+p {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #514e38;
+  margin-bottom: 20px;
+}
+
+/* line 99, ../main.scss */
+section {
+  padding: 20px 0;
+}
+
+/* line 104, ../main.scss */
+.main h1 {
+  color: #507356;
+  font-size: 3.5em;
+}
+@media (max-width: 700px) {
+  /* line 104, ../main.scss */
+  .main h1 {
+    font-size: 2.2em;
+  }
+}
+/* line 112, ../main.scss */
+.main p {
+  color: #3E2B3D;
+  margin-top: 15px;
+}
+
+/* line 118, ../main.scss */
+.artists {
+  background: #8D8862;
+  border-top: 20px solid #E3C691;
+  border-bottom: 50px solid #507356;
+}
+/* line 4, ../main.scss */
+.artists:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 125, ../main.scss */
+.artists h1 {
+  font-size: 3em;
+  color: #263729;
+}
+@media (max-width: 700px) {
+  /* line 125, ../main.scss */
+  .artists h1 {
+    font-size: 2em;
+  }
+}
+/* line 133, ../main.scss */
+.artists h2 {
+  font-size: 1.2em;
+  color: #eddbba;
+}
+@media (max-width: 700px) {
+  /* line 133, ../main.scss */
+  .artists h2 {
+    display: none;
+  }
+}
+/* line 141, ../main.scss */
+.artists p {
+  color: #314634;
+}
+/* line 144, ../main.scss */
+.artists .artistlist {
+  padding-bottom: 20px;
+}
+/* line 4, ../main.scss */
+.artists .artistlist:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 149, ../main.scss */
+.artists .artistlist .item {
+  min-width: 95px;
+  color: #6f6b4d;
+  width: 18%;
+  float: left;
+  padding: 1%;
+  text-align: center;
+}
+/* line 157, ../main.scss */
+.artists .artistlist .item img {
+  max-width: 130px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  padding: 5%;
+}
+
+/* line 172, ../main.scss */
+.venue {
+  position: relative;
+  background: url("../images/backgrounds/woodworking_workshop.jpg") no-repeat 50% 20%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border-bottom: 50px solid #8D8862;
+}
+/* line 174, ../main.scss */
+.venue h1 {
+  position: absolute;
+  bottom: 10px;
+  right: 5%;
+  color: #E3C691;
+  text-align: right;
+  font-size: 3em;
+}
+@media (min-width: 801px) {
+  /* line 172, ../main.scss */
+  .venue {
+    height: 350px;
+  }
+}
+@media (max-width: 800px) {
+  /* line 172, ../main.scss */
+  .venue {
+    height: 150px;
+  }
+}
+@media (max-width: 300px) {
+  /* line 172, ../main.scss */
+  .venue {
+    height: 100px;
+  }
+}
+/* line 4, ../main.scss */
+.venue:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 188, ../main.scss */
+.workshops {
+  position: relative;
+  border-bottom: 40px solid #3E2B3D;
+  border-top: 40px solid #B08B7B;
+  background: url("../images/backgrounds/pottery_workshop.jpg") no-repeat 50% 20%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 190, ../main.scss */
+.workshops h1 {
+  position: absolute;
+  bottom: 10px;
+  right: 10%;
+}
+@media (min-width: 801px) {
+  /* line 188, ../main.scss */
+  .workshops {
+    height: 350px;
+  }
+}
+@media (max-width: 800px) {
+  /* line 188, ../main.scss */
+  .workshops {
+    height: 150px;
+  }
+}
+@media (max-width: 300px) {
+  /* line 188, ../main.scss */
+  .workshops {
+    height: 100px;
+  }
+}
+/* line 4, ../main.scss */
+.workshops:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /*# sourceMappingURL=main.css.map */
 
 {
 "version": 3,
-"mappings": ";AAEA,IAAK;EACH,UAAU,EAHA,OAAO",
-"sources": ["../main.scss"],
+"mappings": "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",
+"sources": ["../_reset.scss","../main.scss"],
 "names": [],
 "file": "main.css"
 }
