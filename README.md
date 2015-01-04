@@ -16,6 +16,8 @@ Learning CoffeeScript allows front-end developers to write JavaScript more beaut
 
 
 ## Instructions
+This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage. Or you can simply add `/tree/` and then then the branch name to the URL to go to the branch you want to peek at. So, for example branch 01_03 would be at [https://github.com/planetoftheweb/coffeescript/tree/01_04](https://github.com/planetoftheweb/coffeescript/tree/01_04)
+
 1. Make sure you have these installed
 	- [node.js](http://nodejs.org/)
 	- [git](http://git-scm.com/)
