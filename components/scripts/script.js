@@ -1,12 +1,5 @@
-var info, key, value;
+var add;
 
-info = {
-  name: 'Ray',
-  title: 'Staff Author',
-  tuts: 'http://lynda.planetoftheweb.com'
+add = function(a, b) {
+  return a + b;
 };
-
-for (key in info) {
-  value = info[key];
-  console.log("" + key + ": " + value);
-}
