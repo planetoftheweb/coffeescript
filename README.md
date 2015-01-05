@@ -2,9 +2,6 @@
 ![Up and Running with CoffeeScript Hero Image](hero.png)
 This is the repository for my course, [Up and Running with CoffeeScript](http://www.lynda.com/Developer-Web-Design-tutorials/Up-Running-CoffeeScript/154415-2.html). The full course is available at [lynda.com](http://lynda.com).
 
-## Course Intro
-<iframe width='560' height='315' src='https://www.lynda.com/player/embed/168010?fs=3&w=560&h=315&ps=paused&utm_medium=referral&utm_source=embed+video&utm_campaign=ldc-website&utm_content=vid-168010' mozallowfullscreen='true' webkitallowfullscreen='true' allowfullscreen='true' frameborder='0'></iframe>
-
 ## Course Description
 Learning CoffeeScript allows front-end developers to write JavaScript more beautifully and efficiently. It gives your code an extra zing. This course teaches the best features from the CoffeeScript language, like splats and ranges, plus how to write common JavaScript commands more efficiently using CoffeeScript. Author Ray Villalobos also shows how to work with Gulp.js, a streaming build system for not only CoffeeScript, but also Sass, LESS, JavaScript, and CSS.
 
