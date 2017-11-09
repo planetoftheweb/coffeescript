@@ -1,7 +1,7 @@
 # Learning CoffeeScript
 This is the repository for my course Learning CoffeeScript. The full course is available on [LinkedIn Learning](https://www.linkedin.com/learning/learning-coffeescript?trk=insiders_6787408_learning) and [Lynda.com](https://www.lynda.com/Developer-Web-Design-tutorials/Up-Running-CoffeeScript/154415-2.html)
 
-[![Learning CoffeeScript](https://media-exp2.licdn.com/media-proxy/ext?w=1200&h=675&f=n&hash=6HrddnpdvB34YxBri%2Bkvehljlpk%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6plxVUzgUv5K_PrkC9q0RIUJDPBy-iXS2j-NSfY3HhcMXeZLSioVoWfikDmAw2fumqRDLmFo69LcLmY4Yx3A)](https://www.linkedin.com/learning/learning-coffeescript?trk=insiders_6787408_learning)
+[![Learning CoffeeScript](https://media-exp2.licdn.com/media-proxy/ext?w=1200&h=675&f=n&hash=S0bwMEpxZDhakpduXkiD2vmEuRY%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6plxVUzgUv5K_PrkC9q0RIUJDPBy-gXiGu-9CfYXLtfcbaZLSioV4XfSwHkgU6ee-sRjbiFo69LcLmY4Yx3A)](https://www.linkedin.com/learning/learning-coffeescript?trk=insiders_6787408_learning)
 
 Learning CoffeeScript allows front-end developers to write JavaScript more beautifully and efficiently. It gives your code an extra zing. This course teaches the best features from the CoffeeScript language, like splats and ranges, plus how to write common JavaScript commands more efficiently using CoffeeScript. Author Ray Villalobos also shows how to work with Gulp.js, a streaming build system for not only CoffeeScript, but also Sass, LESS, JavaScript, and CSS.
 
